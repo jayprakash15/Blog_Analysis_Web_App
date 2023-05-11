@@ -1,0 +1,59 @@
+# ## Rough ##
+# import string
+# def remove_punctuation(mess):
+# 	NoPunctuation = ""
+# 	for char in mess:
+# 		if char not in string.punctuation:
+# 			NoPunctuation = NoPunctuation + char
+# 	return NoPunctuation
+#
+# def count_personal_pronouns(text):
+# 	# pronoun = ["I", "we", "my", "ours","us","We","My","Ours","Us"]
+# 	count = 0
+# 	for word in text.split():
+# 		# if word == pronoun:
+# 		if word == "I" or "we" or "my" or "ours" or "us" or "We" or "My" or "Ours" or "Us":
+# 			count = count + 1
+# 	return count
+#
+# from nltk.corpus import stopwords
+#
+# def cleaning_text(mess):
+# 	# remove the punctuation
+# 	NoPunctuation = ""
+# 	for char in mess:
+# 		if char not in string.punctuation:
+# 			NoPunctuation = NoPunctuation + char
+#
+# 	NoPunctuation = NoPunctuation.split()
+# 	# print(type(NoPunctuation))
+# 	# print(NoPunctuation)
+# 	text = []
+#
+# 	# remove the stopwords
+# 	for word in NoPunctuation:
+# 		if word not in stopwords.words("english"):
+# 			text.append(word)
+#
+# 	print("Cleaned text by removing stop words and punctuations")
+# 	# StopWords_Not_In_nltk = ['We','It','A','etc','many','using','within','The','In','Then','As','If']
+# 	# There might be more but I don't have time now.
+#
+# 	return text
+#
+# # blog_text.apply(text_process)    # call the function
+#
+# blog_text = cleaning_text(blog_text)
+# # print(blog_text)
+
+
+### Text summarization ###
+# import gensim==4.0.1
+# gensim.downloader("summarization")
+# from gensim.summarization import summarize
+#
+# # Perform text summarization using TextRank algorithm
+# summary = summarize(blog_text, ratio=0.2)
+#
+# # Print the summary
+# print(summary)
