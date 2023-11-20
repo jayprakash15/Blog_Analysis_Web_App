@@ -49,9 +49,9 @@ if URL:
 	st.write("Word count of blog : ", Word_Count)
 
 	# divide polarity score into three parts
-	if Polarity_Score > 0.25:
+	if Polarity_Score > 0.3:
 		Sentiment = "Positive"
-	elif Polarity_Score < 0:
+	elif Polarity_Score < 0.01:
 		Sentiment = "Negative"
 	else:
 		Sentiment = "Neutral"
