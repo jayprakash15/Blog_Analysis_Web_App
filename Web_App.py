@@ -51,7 +51,7 @@ if URL:
 	# divide polarity score into three parts
 	if Polarity_Score > 0.3:
 		Sentiment = "Positive"
-	elif Polarity_Score < 0.01:
+	elif Polarity_Score < 0.1:
 		Sentiment = "Negative"
 	else:
 		Sentiment = "Neutral"
